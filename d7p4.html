@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitha Tech</title>
+    <link rel="shortcut icon" href="HTMLPIC/Vitha Tech 1.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+   <img src="HTMLPIC/0.jpg" id="img"  class="img img-thumbnail w-100" alt="">
+</body>
+</html>
+<script>
+    setInterval(fun1,1000);
+    function fun1(){
+        let img1=document.getElementById('img');
+        let imgname=Math.floor(Math.random()*6);
+        img1.src="HTMLPIC/"+imgname+".jpg";
+    }
+</script>

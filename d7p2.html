@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitha Tech</title>
+    <link rel="icon" href="HTMLPIC/Vitha Tech 1.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        .container-fluid{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div  class="container-fluid">
+        <h1 class="alert bg-info">Bulb</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <button onclick="document.getElementById('img1').src='HTMLPIC/pic_bulbon.gif'" class="btn btn-danger w-100">Turn On the Light</button>
+            </div>
+            <div class="col-sm-4">
+                <img id="img1" src="HTMLPIC/pic_bulboff.gif" class="img img-thumbnail w-100" alt="">
+            </div>
+            <div class="col-sm-4">
+                <button onclick="document.getElementById('img1').src='HTMLPIC/pic_bulboff.gif'" class="btn btn-danger w-100 btn-center">Turn Off the Light</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

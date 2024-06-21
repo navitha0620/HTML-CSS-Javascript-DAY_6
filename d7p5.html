@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitha Tech</title>
+    <link rel="shortcut icon" href="HTMLPIC/Vitha Tech 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="bg-info text-dark" style="text-align: center; padding: 30px; font-family:  'Arial Narrow', Arial, sans-serif;">Image Default Moving By Array</h1>
+    </div>
+     <div class="container">
+        <img src="HTMLPIC/babyplant.avif" id="img" class="img img-thumbnail w-100" alt="">
+     </div>
+<script>
+    let arr=['0.jpg','1.jpg','4.jpg','parentleafbush.jpg','hangingtree.jpg','6.jpg','greenseedling.jpg','waterindoors.jpg','water-Iris.jpg','Show plant.jpg'];
+    function vitha(){
+        let i=Math.floor(Math.random()*arr.length);
+        let img1=document.getElementById('img').src="HTMLPIC/"+arr[i];
+        console.log(i);
+        setInterval(vitha,1000);
+    }
+    vitha();
+</script>
+</body>
+</html>

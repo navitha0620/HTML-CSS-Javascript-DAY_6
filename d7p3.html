@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitha Tech</title>
+    <link rel="icon" href="HTMLPIC/Vitha Tech 1.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(70, 69, 69);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container-fluid{
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="alert bg-info">Multiple Images Changing</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <!--<button class="btn btn-danger text-light" onclick="document.getElementById('img2').src='HTMLPIC/babyplant.avif'">Click</button>-->
+                <button class="btn btn-danger text-light" onclick="fun1()">Click</button>
+            </div>
+            <div class="col-sm-4">
+                <img id="img2" src="HTMLPIC/" class="img img-thumbnail " alt="">
+            </div>
+           <!--<div class="col-sm-4">
+                <button class="btn btn-danger text-light" onclick="document.getElementById('img2').src='HTMLPIC/greenseedling.jpg'">Next</button>
+            </div>-->
+        </div>
+    </div>
+</body> 
+</html>
+<script>
+    function fun1(){
+        let imgele=document.getElementById("img2");
+        let rv=Math.floor(Math.random()*6);
+        let imgname="HTMLPIC/"+rv+".jpg";
+        imgele.src=imgname;
+    }
+</script>
